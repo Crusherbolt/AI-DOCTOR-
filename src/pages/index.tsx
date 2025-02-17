@@ -1,14 +1,16 @@
-'use client';
+"use client";
 
-import React from 'react';
-import { motion } from 'framer-motion';
-import { useRouter } from 'next/router';  // Note: using next/router instead of next/navigation
-
+import React from "react";
+import { motion } from "framer-motion";
+import { useRouter } from "next/router"; // Note: using next/router instead of next/navigation
 
 export default function LandingPage() {
   const router = useRouter();
 
-  const handleNavigate = (e: React.MouseEvent<HTMLAnchorElement>, path: string) => {
+  const handleNavigate = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    path: string
+  ) => {
     e.preventDefault();
     router.push(path);
   };
@@ -19,17 +21,17 @@ export default function LandingPage() {
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <h1 className="text-2xl font-bold">Aerion</h1>
           <div className="space-x-6">
-            <a 
-              href="/playground" 
+            <a
+              href="/playground"
               className="hover:text-cyan-400 transition-colors"
-              onClick={(e) => handleNavigate(e, '/playground')}
+              onClick={(e) => handleNavigate(e, "/playground")}
             >
               DOCTOR'S ROOM
             </a>
-            <a 
-              href="/about" 
+            <a
+              href="/about"
               className="hover:text-cyan-400 transition-colors"
-              onClick={(e) => handleNavigate(e, '/about')}
+              onClick={(e) => handleNavigate(e, "/about")}
             >
               SINUS VERIFICATION
             </a>
@@ -44,28 +46,42 @@ export default function LandingPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-5xl font-bold mb-6">Welcome to Your Virtual AI Doctor</h2>
+            <h2 className="text-5xl font-bold mb-6">
+              Welcome to Your Virtual AI Doctor
+            </h2>
             <p className="text-gray-300 text-lg mb-8">
-            Our cutting-edge platform uses advanced audio and video diagnostics to evaluate sinus and facial concerns. With fast, accurate prescriptions, we provide an affordable alternative to traditional care for patients in need.
+              Our cutting-edge platform uses advanced audio and video
+              diagnostics to evaluate sinus and facial concerns. With fast,
+              accurate prescriptions, we provide an affordable alternative to
+              traditional care for patients in need.
             </p>
-            <a 
+            <a
               href="/playground"
               className="bg-cyan-500 hover:bg-cyan-600 text-white px-8 py-3 rounded-lg 
                        inline-block transition-colors font-bold"
-              onClick={(e) => handleNavigate(e, '/playground')}
+              onClick={(e) => handleNavigate(e, "/playground")}
             >
               ENTER DOCTOR'S ROOM
             </a>
           </motion.div>
-          
+
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="relative h-[400px] rounded-lg overflow-hidden"
+            className="relative h-[400px] rounded-lg overflow-hidden flex items-center justify-center"
           >
-            <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 
-                          animate-pulse rounded-lg border border-gray-700"></div>
+            {/* Pulsing gradient background */}
+            <div
+              className="absolute inset-0 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 
+                  animate-pulse rounded-lg border border-gray-700"
+            />
+            {/* Doctor Image */}
+            <img
+              src="./vcdoc.png"
+              alt="Virtual Doctor"
+              className="z-10 w-auto h-full object-contain"
+            />
           </motion.div>
         </div>
       </main>

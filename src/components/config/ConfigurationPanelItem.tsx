@@ -17,7 +17,9 @@ export const ConfigurationPanelItem: React.FC<ConfigurationPanelItemProps> = ({
   return (
     <div className="w-full text-gray-300 py-4 border-b border-b-gray-800 relative">
       <div className="flex flex-row justify-between items-center px-4 text-xs uppercase tracking-wider">
-        <h3>{title}</h3>
+        <h3>
+          {title}
+        </h3>
         {deviceSelectorKind && (
           <span className="flex flex-row gap-2">
             <TrackToggle
@@ -34,6 +36,7 @@ export const ConfigurationPanelItem: React.FC<ConfigurationPanelItemProps> = ({
       </div>
       <div className="px-4 py-2 text-xs text-gray-500 leading-normal">
         {children}
+        {/* Patient is 18 years old male suffering from heart disease model predict that patient is suffering from Sinus Issues. */}
       </div>
     </div>
   );

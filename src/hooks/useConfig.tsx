@@ -38,8 +38,8 @@ export type UserSettings = {
 
 // Fallback if NEXT_PUBLIC_APP_CONFIG is not set
 const defaultConfig: AppConfig = {
-  title: "LiveKit Agents Playground",
-  description: "A playground for testing LiveKit Agents",
+  title: "AERION DOCTOR'S ROOM",
+  description: "A place to get cured and talk about your personal needs.",
   video_fit: "cover",
   settings: {
     editable: true,
