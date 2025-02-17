@@ -216,9 +216,12 @@ export default function Playground({
     return (
       <div className="flex flex-col gap-4 h-full w-full items-start overflow-y-auto">
         {config.description && (
+          // <ConfigurationPanelItem title="Description">
+          //   {config.description}
+          // </ConfigurationPanelItem>
           <ConfigurationPanelItem title="Description">
-            {config.description}
-          </ConfigurationPanelItem>
+          Medica is an advanced AI doctor designed to analyze symptoms, provide accurate diagnoses, and suggest personalized treatments. Using machine learning, it offers instant consultations, early disease detection, and 24/7 healthcare support. While not a replacement for human doctors, Medica enhances accessibility and efficiency in modern healthcare. 
+        </ConfigurationPanelItem>
         )}
 
         <ConfigurationPanelItem title="Settings">
