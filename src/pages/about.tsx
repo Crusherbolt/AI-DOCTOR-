@@ -68,7 +68,11 @@ export default function AboutPage() {
     <div className="min-h-screen bg-gradient-to-br from-gray-900 to-black text-white">
       <nav className="p-6">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
-          <h1 className="text-2xl font-bold">Aerion</h1>
+        <h1 className="text-2xl font-bold">
+          <a href="/" className="text-inherit hover:underline">
+            Aerion
+           </a>
+          </h1>
           <div className="space-x-6">
             <a 
               href="/playground"
