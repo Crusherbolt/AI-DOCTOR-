@@ -117,8 +117,10 @@ export default function Playground({
 
     const loadingContent = (
       <div className="flex flex-col items-center justify-center gap-2 text-gray-700 text-center h-full w-full">
-        <LoadingSVG />
-        Waiting for video track
+        {/* <LoadingSVG />
+        Waiting for video track */}
+        <iframe width="560" height="250" src="https://www.youtube.com/embed/JhHUEg0hJkI?si=cIu01hYnqsM1KjfH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
       </div>
     );
 
