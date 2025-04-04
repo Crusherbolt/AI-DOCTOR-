@@ -1,0 +1,12 @@
+Add .env 
+
+LIVEKIT_URL=xxxxxx
+LIVEKIT_API_KEY=xxxxxxxx
+LIVEKIT_API_SECRET=xxxxxxx
+
+DEEPGRAM_API_KEY=xxxxxxx (change model accordingly)
+CARTESIA_API_KEY=xxxxx (can use deepgram instead just change tts.cartesia() to tts.deepgram())
+# CEREBRAS_API_KEY=XXXXXX (optional)
+OPENROUTER_API_KEY=xxxxxxxxx
+
+In Terminal Type : python main.py dev
