@@ -105,4 +105,4 @@ An experimental, multimodal conversational health assistant using Large Language
 
 ---
 
-*For feedback, feature requests, or collaboration—please open an issue or pull request!*
+* For feedback, feature requests, or collaboration—please open an issue or pull request! *
